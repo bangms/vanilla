@@ -1,0 +1,12 @@
+{
+  "name": "js_basics_3",
+  "version": "1.0.0",
+  "description": "Javascript Basics 3",
+  "author": "Ken Huh <ken@vanillacoding.co> (https://vanillacoding.co)",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0",
+    "should": "^11.2.1"
+  }
+}
