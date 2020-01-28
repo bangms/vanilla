@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mocha Tests</title>
+    <link rel="stylesheet" href="node_modules/mocha/mocha.css">
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script src="node_modules/mocha/mocha.js"></script>
+    <script src="node_modules/chai/chai.js"></script>
+    <script>
+        mocha.setup('bdd');
+        mocha.reporter('html');
+        expect = chai.expect;
+        should = chai.should();
+    </script>
+
+    <!-- load code you want to test here -->
+    <script src="lib/sumArray.js"></script>
+    <script src="lib/reverseArray.js"></script>
+    <script src="lib/reversedString.js"></script>
+    <script src="lib/commonFactors.js"></script>
+    <script src="lib/largestNumber.js"></script>
+    <script src="lib/secondLargestNumber.js"></script>
+
+    <!-- load your test files here -->
+    <script src="test/sumArray.test.js"></script>
+    <script src="test/reverseArray.test.js"></script>
+    <script src="test/reversedString.test.js"></script>
+    <script src="test/commonFactors.test.js"></script>
+    <script src="test/largestNumber.test.js"></script>
+    <script src="test/secondLargestNumber.test.js"></script>
+
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>
